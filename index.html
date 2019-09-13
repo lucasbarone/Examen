@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+  <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Carousel -->
+	<script type="text/javascript" src="js/carousel.js"> </script>
+    <!-- MIS ESTILOS -->    	
+    <link rel="stylesheet" href="css/style.css">	
+  	<title>Alibrate - Comunidad</title>
+  	<!-- Fuentes de Google -->
+  	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+  	<!-- ICONOS DEL SITIO -->
+    <script src="https://kit.fontawesome.com/672eaded7c.js"></script>
+  </head>
+<body>
+    <div class="wrapper">
+        <!-- Menu izq Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img class="isologo" src="img/logo.png">
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a clase="" href="#"><i class="fas fa-home"></i> Actividad</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-book-open"></i> Mi Biblioteca</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fas fa-medal"></i> Rankings</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-search-plus"></i> Busqueda Avanzada</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-hand-holding-heart"></i> Recomendaciones</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle "><i class="fas fa-th-list"></i> Listas</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#"> Todas las listas</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis listas</a>
+                        </li>
+                    </ul>
+                    <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class=" dropdown-toggle"><i class="fas fa-book-reader"></i> Comunidad</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#"><i class="far fa-address-card"></i> Seguidores</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-address-book"></i> Siguiendo</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-address-book"></i> Invitar</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-eye"></i><i class="fas fa-search"></i> Buscar lectores</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-eye"></i> Sugerencias</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-bell"></i> Notificaciones</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-envelope"></i> Mensajes</a>
+                </li>
+            </ul>
+
+            <div class="list-unstyled CTAs">
+                <li>
+                <i class="fas fa-exclamation"></i> Informacion adicional
+            </ul>
+            <li>
+                <i class="fas fa-bookmark"></i> Acerca de Alibrate
+            </ul>
+            <li>
+                <i class="fas fa-exclamation-circle"></i> Politicas de Privacidad
+            </ul>
+            <li>
+                <i class="fas fa-power-off"></i> CERRAR SESIÓN
+            </ul>
+        </nav>
+        <!-- Contenido  -->
+        
+        <div class="content">
+        	
+        	 	<!-- Botones del Toggler  -->
+                <nav class="row navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                
+	                <!--<div class="row container">   Barra navegacion -->
+	                	<!-- Toggler sidebar -->
+		                	<div class="col-2 ">
+			                	<button type="button" id="sidebarCollapse" class="btn btn-info">
+			                    <span><img class="isologo" src="img/iso.png"></span>
+			                    </button>
+		                    </div>	<!-- Fin col 4 -->
+		                    <div class="col-10">
+
+								<nav class="navbar navbar-light bg-light">
+									
+								  <form class="form-inline">
+								  	<div class="row navbus">
+		                     			<div class="col-9 nav-align">
+								    <input class="form-control" type="Buscar" placeholder="Buscar" aria-label="Search">
+										</div>
+										<div class="col-3 navbus">
+								    <button type="button" class="btn btn-seguido btn-sm"><i class="fas fa-search"></i></button>
+								    <button type="button" class="btn btn-seguido btn-sm"><i class="fas fa-filter"></i></i></button>
+								    </div>
+								  </form>
+								</nav>    
+		                    </div><!-- Fin col 8 -->
+	                <!--</div>Fin barra navegacion container fluid  -->
+	            </nav>
+        
+		
+		<!--seguidores tarjetas-->
+		<div class="container-segui">
+			<!--Titulo-->
+			<div class="titulos">
+				<div class="col-4"><h6>Comunidad</h6>
+				</div>
+				<div class="col-8">
+				</div>
+			</div>
+			<!--Control de seguidores-->
+
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Seguidores</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Seguidos</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Invitar</a>
+			  </li>			 
+			</ul>
+			<!--Contenido Seguidores-->
+			<div class="tab-content">
+			  <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+			<ul class="list-group list-group-flush">
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2"style="text-align: left;"><img src="img/seguidos/bruno.jpg"></div>
+					  	<div class="col-5">Bruno Diaz</div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-seguido btn-sm">Seguido</button></div>
+					  	<div class="col-2" style="text-align: right;"><button type="button" class="btn btn-chico btn-sm">X</button></div>
+					  </div></li>
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2" style="text-align: left;"><img src="img/seguidos/tony.jpg"></div>
+					  	<div class="col-5">Tony Stark</div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-seguir btn-sm">Seguir</button></div>
+					  	<div class="col-2" style="text-align: right;">
+					  </div></li>
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2" style="text-align: left;"><img src="img/seguidos/logan.jpg"></div>
+					  	<div class="col-5">Logan</div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-seguido btn-sm">Seguido</button></div>
+					  	<div class="col-2" style="text-align: right;"><button type="button" class="btn btn-chico btn-sm">X</button></div>
+					  </div></li>
+					</ul>
+				  </div>
+				  <!--Contenido Seguidos-->
+				  <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<ul class="list-group list-group-flush">
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2"style="text-align: left;"><img src="img/seguidos/bruno.jpg"></div>
+					  	<div class="col-5">Juan</div>
+					  	<div class="col-2" style="text-align: right;"></div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-chico btn-sm">Borrar</button></div>
+					  </div></li>
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2" style="text-align: left;"><img src="img/seguidos/tony.jpg"></div>
+					  	<div class="col-5">Pedro</div>
+					  	<div class="col-2" style="text-align: right;"></div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-chico btn-sm">Borrar</button>
+					  </div></li>
+					  <li class="list-group-item"> 
+					  <div class="row">
+					  	<div class="col-2" style="text-align: left;"><img src="img/seguidos/logan.jpg"></div>
+					  	<div class="col-5">Mario</div>
+					  	<div class="col-2" style="text-align: right;"></div>
+					  	<div class="col-3" style="text-align: right;"><button type="button" class="btn btn-chico btn-sm">Borrar</button></div>
+					  </div></li>
+					</ul>
+				  </div>
+				  <!--Contenido Invitar-->
+				  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"><div class="list-group">
+					  <button type="button" class="list-group-item list-group-item-action active">
+					    Invita a otros lectores:
+					  </button>
+					  <button type="button" class="list-group-item list-group-item-action"><i class="fab fa-facebook-square"></i> Facebook</button>
+					  <button type="button" class="list-group-item list-group-item-action"><i class="fab fa-instagram"></i> Instagram</button>
+					  <button type="button" class="list-group-item list-group-item-action"><i class="fab fa-twitter"></i> Twitter</button>
+					</div>
+				  </div><!--Fin Invitar-->
+				 
+				</div><!--Fin -->
+				</div><!--FIn container-->
+
+
+
+		<div class="line"></div>
+		<div class="row">
+			
+		        	
+		<!--Lista de seguidores-->
+		<div class="row">
+		   
+		</div>	<!--Fin Row -->
+		</div><!--Fin container sugerido-->
+		<!--sugeridos tarjetas-->
+		<div class="container sugeridos">	
+		  <div class="row suger-cont">
+		  	<div class="col-lg-4 d-none d-md-block">  <img class="card-img-top" src="img/sugeridos.jpg"
+		            alt="Card image cap">
+		    </div>
+		  	<div class="col-lg-8">
+		  	<div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
+
+		  <!--Controles para pasar-->
+		  <div class="row titulos controls-top"> 
+		  	<div class="col-4"><h6>Sugerencias</h6>
+		  	</div>
+		  	<div class="col-4" style="text-align: center;"><a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i class="fas fa-arrow-circle-left"></i></a>
+			<a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i class="fas fa-arrow-circle-right"></i></a>
+		  	</div>
+		  	<div class="col-4" style="text-align: right;"><small class="text-muted">|<a href="#" class="badge badge-light">Ver todas</a> | </small>
+		  	</div>
+		 
+		    <!--tarjetas slide-->
+		  </div class="suger-contenedor">
+		  <div class="carousel-inner v-2" role="listbox">
+		    <div class="carousel-item active">
+		      <div class="col-12 col-md-4">
+		        <div class="card mb-2">
+		          <img class="card-img-top" src="img/sugeridos/bruno.jpg"
+		            alt="Card image cap">
+		          <div class="card-body">
+		     		 <small class="text-muted">Opinó de: <i>"El tunel"</i></small>
+		            <div class="opinion"><a class="btn btn-primary btn-sm btn-rounded">Seguir</a></div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <div class="col-12 col-md-4">
+		        <div class="card mb-2">
+		          <img class="card-img-top" src="img/sugeridos/logan.jpg"
+		            alt="Card image cap">
+		          <div class="card-body">
+		            <small class="text-muted">Opinó de: <i>"El exorcista"</i></small>
+		            <div class="opinion"><a class="btn btn-primary btn-sm btn-rounded">Seguir</a></div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="carousel-item">
+		      <div class="col-12 col-md-4">
+		        <div class="card mb-2">
+		          <img class="card-img-top" src="img/sugeridos/tony.jpg"
+		            alt="Card image cap">
+		          <div class="card-body">
+		          	<small class="text-muted">Opinó de: <i>"Rebelion en la granja"</i></small>
+		            <div class="opinion"><a class="btn btn-primary btn-sm btn-rounded">Seguir</a></div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		   </div> 
+		  </div>
+
+		</div><!--Fin sugeridos-->
+		</div>
+	</div>
+	
+  </div>
+  <!--Pie-->
+	
+</div>
+<div class="footer" style="text-align: center;">
+		Alibrate (R)Copyright | Conectando Lectores
+	</div><!--Fin Pie-->
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+<!--Js Seguidores-->
+<script>
+  $(function () {
+    $('#myTab li:first-child a').tab('show')
+  })
+</script>
+   
+
+  </body>
+</html>
